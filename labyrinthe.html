@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>En construction</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+		<input type="submit" id="submit_redemarrer" value="Red&eacute;marrer"></input></br>
+		Largeur : <input type="number" id="texte_largeur" min="3" max="100" value="40" class="input_numerique"></input>
+		Hauteur : <input type="number" id="texte_hauteur" min="3" max="100" value="40" class="input_numerique"></input>
+		<select id="selectionner_type_labyrinthe">
+			<option value="type_labyrinthe_uni" selected>Uni</option> 
+			<option value="type_labyrinthe_lignes_uniformes" >Lignes uniformes</option>
+			<option value="type_labyrinthe_plus" >Plus</option>
+			<option value="type_labyrinthe_cible" >Cible</option>
+			<option value="type_labyrinthe_illusion">Illusion</option>
+			<!--<option value="type_labyrinthe_" >Spirale</option>
+			<option value="type_labyrinthe_" >Ligne diagonale</option>-->
+		</select></br>
+		<input type="submit" id="submit_generer_labyrinthe" value="R&eacute;initialiser"></input></br>
+
+		<!-- Autres paramètres-->
+		<div id="radio_orientation_div">
+			<input type="radio" name="radio_orientation" value="Horizontal">Horizontal</input> 
+			<input type="radio" name="radio_orientation" value="Vertical" checked="true">Vertical</input></br>
+		</div>
+		<div id="select_distribution_div">
+			<select id="select_distribution">
+				<option value="distribution_pointilles" selected>Pointillés</option> 
+				<option value="distribution_muraille">Muraille</option>
+				<option value="distribution_pluie">Pluie</option>
+			</select>
+		</div>
+		<div id="div_texte_opacite" style="visibility:hidden">
+			Opacité : <input type="text" id = "texte_opacite" style="width:5em" value="0.5">
+		</div>
+		<!-- Offset -->
+		<div id="textes_offset_div">
+			G : <input type="number" class="input_numerique" id="texte_offset_gauche" value="0"></input>
+			H : <input type="number" class="input_numerique" id="texte_offset_haut" value="0"></input>
+			D : <input type="number" class="input_numerique" id="texte_offset_droite" value="0"></input>
+			B : <input type="number" class="input_numerique" id="texte_offset_bas" value="0"></input>
+		</div>
+		
+		
+		<!-- Et le fameux canevas -->
+		<canvas id="mon_canvas" width="920" height="620">
+            Message pour les navigateurs ne supportant pas encore canvas.
+        </canvas></br>
+	
+	
+		<script src="constantes.js"></script>		
+	    <script src="gestion_input.js"></script>		
+        <script src="construction_fondation.js"></script>				
+        <script src="construction.js"></script>		
+        <script src="dessin_labyrinthe.js"></script>	
+        
+		<script src="parametrage.js"></script>		
+        <script src="gestion_input_inGame.js"></script>	
+		<script src="dessin_principal.js"></script>	
+    </body>
+</html>

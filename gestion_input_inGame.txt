@@ -1,0 +1,18 @@
+function deplacerPersonnage(){
+	if (rightPressed && terrain[personnage.y][personnage.x].murD == MUR_OUVERT){
+		personnage.x++;
+		return;
+	}
+	if (leftPressed && personnage.x > 0 && terrain[personnage.y][personnage.x-1].murD == MUR_OUVERT){
+		personnage.x--;
+		return;
+	}		
+	if (downPressed && terrain[personnage.y][personnage.x].murD == MUR_OUVERT){
+		personnage.y++;
+		return;
+	}
+	if (upPressed && personnage.y > 0 && terrain[personnage.y-1][personnage.x].murD == MUR_OUVERT){
+		personnage.y--;
+		return;
+	}
+}

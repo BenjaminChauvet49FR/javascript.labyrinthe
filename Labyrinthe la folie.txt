@@ -1,0 +1,71 @@
+Tentacules :
+Paramètres :
+Nombre de branches (2 à 4)
+Direction (tentacules horizontaux / tentacules verticaux)
+Opacité (10% -> 100%)
+
+Contraintes :
+Direction des tentacules : au moins 15 cases
+Nombre de tentacules : au moins 5*(nombre de cases + 1)
+
+--------
+
+Cibles :
+Paramètres :
+Offset gauche/haut/droite/bas
+Offset intérieur
+Opacité (classique)
+
+--------
+
+Spirale :
+Paramètres :
+Spire HG/HD/BD/BG
+Sens externe-interne : horaire/anti-horaire
+Opacité 
+
+--------
+
+Pluie :
+Paramètres :
+Offset (comme pour les murailles)
+Opacité (classique)
+Orientation
+
+--------
+
+Bataille navale
+
+--------
+
+Ligne diagonale
+Paramètres : 
+Nombre de murs
+Orientation
+Opacité
+
+--------
+
+Losange d'illusion
+
+--------
+
+Cercle d'illusion
+
+--------
+
+
+A propos de l' "opacité classique" :
+
+Probabilité minimale d'opacité = 0.1
+Probabilité maximale = 1-100/(nombre de cases) si (nombre de cases < 400), 0.8 sinon
+
+--------
+
+A propos des modes de remplissages linéaires :
+->Murailles 
+->Pointillés
+->Pluie fermante
+->Pluie ouvrante
+
+->Orientation
